@@ -12,7 +12,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ success: false, error: "Resend limit reached" });
   }
   
-  // Generate OTP
+  // Generate OTP (random, shown in demo)
   const otp = (Math.floor(100000 + Math.random() * 900000)).toString();
   otpStore[phone] = {
     otp,
