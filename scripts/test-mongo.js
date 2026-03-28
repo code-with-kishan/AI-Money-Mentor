@@ -4,7 +4,7 @@
 const { MongoClient, ServerApiVersion } = require('mongodb');
 
 // TODO: Replace <db_password> with your actual MongoDB Atlas password
-const uri = "mongodb+srv://AI-Money-Mentor:Knishad@2006@cluster0.agus9ua.mongodb.net/?appName=Cluster0";
+const uri = "mongodb+srv://AI-Money-Mentor:example6@cluster0.agus9ua.mongodb.net/?appName=Cluster0";
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
