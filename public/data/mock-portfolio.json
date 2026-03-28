@@ -1,0 +1,8 @@
+{
+  "holdings": [
+    { "asset": "Nifty 50 ETF", "amount": 220000, "category": "Equity" },
+    { "asset": "PPF", "amount": 120000, "category": "Debt" },
+    { "asset": "Gold ETF", "amount": 80000, "category": "Gold" },
+    { "asset": "US Index ETF", "amount": 60000, "category": "Equity" }
+  ]
+}
