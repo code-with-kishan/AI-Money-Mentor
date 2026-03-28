@@ -7,8 +7,6 @@ const nextConfig: NextConfig = {
     unoptimized: false, // Vercel handles image optimization
   },
   
-  // Enable SWC minification (Vercel default)
-  swcMinify: true,
   
   // Optimize for Vercel
   productionBrowserSourceMaps: false, // Disable source maps on production
