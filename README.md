@@ -47,14 +47,14 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                     User Interfaces                          │
+│                     User Interfaces                         │
 │  Landing → Dashboard → Chat → Tax → SIP → Portfolio         │
-│                   (Next.js Pages)                             │
+│                   (Next.js Pages)                           │
 └────────────────────┬────────────────────────────────────────┘
                      │
                      ▼
 ┌─────────────────────────────────────────────────────────────┐
-│              API Layer (Next.js Routes)                      │
+│              API Layer (Next.js Routes)                     │
 │  /api/analyze  /api/chat  /api/tax  /api/sip                │
 │  /api/portfolio  /api/simulate  /api/demo                   │
 └────────────────────┬────────────────────────────────────────┘
