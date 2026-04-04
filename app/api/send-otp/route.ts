@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { otpStore } from "@/lib/otpStore";
+import { randomInt } from "crypto";
 
 export async function POST(req: NextRequest) {
   const { phone } = await req.json();
@@ -12,8 +13,8 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ success: false, error: "Resend limit reached" });
   }
   
-  // Generate OTP (fixed for demo)
-  const otp = "123456";
+  // Generate a fresh 6-digit demo OTP on every request.
+  const otp = String(randomInt(100000, 1000000));
   otpStore[phone] = {
     otp,
     expires: Date.now() + 2 * 60 * 1000, // 2 min

@@ -39,6 +39,7 @@ export default function LoginPage() {
       if (data.success) {
         setStep("otp");
         setDemoOtp(data.otp); // Demo mode: show OTP
+        setOtp(data.otp); // Auto-fill the OTP field in demo mode
         setTimer(120);
       } else {
         setError(data.error || "Failed to send OTP");
